@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sapisehat | OKE</title>
+  <title>Profile</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -119,7 +119,7 @@
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <!-- <a class="nav-link" href="#"> <img src="" alt=""></a> -->
-    <a href="#" class="brand-link">
+    <a href="index.php" class="brand-link">
       <img src="images/icon.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Sapi Sehat</span>
     </a>
@@ -131,15 +131,15 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="home.php" class="nav-link">
               <i class="nav-icon "  ><img src="images/icon_home.png" alt="Logo" height="50" width="50"></i>
               <span>Beranda</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="profile.php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon "><img src="images/cow.png" alt="Logo" height="40" width="50"></i>
-                            <span>Profile</span>
+                            <span>Detail</span>
               <!-- <p>
                 Detail Sapi
               </p> -->
@@ -165,172 +165,47 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
-
+        
     </div>
     <!-- /.content-header -->
 
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-      <div class="row">
-          <div class="col-12">
-            <!-- Information -->
-            <div class="card card-success card-outline">
-              <div class="card-header">
-              </div>
-              <div class="card-body">
-                <div id="interactive" style="height: 300px;">
-                   <div class="container text center">
-                  <div class="row">
-                  <div class="col-4">
-                    <img src="images/gambar1.jpg"  style="max-width:100%; height:auto; " alt="">
-                    </div>
-                  <div class="col-8">
-                  <div class="container text center">
-                  <H3>Jumlah Sapi</H3>
-                  <label for="fname">Sapi Jantan</label>
-                  <input type="text" id="fname" name="fname" ><br>
-                   <label for="lname">Sapi Betina</label>
-                  <input type="text" id="lname" name="lname" ><br><br>
-                  <H3>Vaksinasi Sapi</H3>
-                  <label for="fname">Dosis 1</label>
-                  <input type="text" id="fname" name="fname" ><br>
-                   <label for="lname">Dosis 2</label>
-                  <input type="text" id="lname" name="lname" ><br><br>
-                   <input type="submit" value="Simpan">
-                  </div>
-                   </div>
-                  </div></div>
-              </div>
-              <!-- /.card-body-->
+      <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form action="jawab.php">
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-              </div>
-  
-            <!-- /.card --> 
-          </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-2">
+                <button type="button" class="btn btn-success float-right"><i class="fas fa-plus"></i>Tambah item</button>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- interactive chart -->
+      </div><br>
+        <div class="container-fluid">
             <div class="card card-success card-outline">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  Interactive Area Chart
-                </h3>
-
-                <div class="card-tools">
-                  Real time
-                  <div class="btn-group" id="realtime" data-toggle="btn-toggle">
-                    <button type="button" class="btn btn-default btn-sm active" data-toggle="on">On</button>
-                    <button type="button" class="btn btn-default btn-sm" data-toggle="off">Off</button>
-                  </div>
+                <div class="card-header"></div>
+                <div class="card-body">
+              
                 </div>
-              </div>
-              <div class="card-body">
-                <div id="interactive" style="height: 300px;"></div>
-              </div>
-              <!-- /.card-body-->
             </div>
-            <!-- /.card --> 
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <!-- Bar chart -->
-            <div class="card card-success card-outline">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  Bar Chart
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div id="bar-chart" style="height: 300px;"></div>
-              </div>
-              <!-- /.card-body-->
-            </div>
-            <!-- /.card -->
-            <!-- Donut chart -->
-            <div class="card card-success card-outline">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <i class="far fa-chart-bar"></i>
-                  Donut Chart
-                </h3>
-
-                <div class="card-tools">
-                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-tool" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body">
-                <div id="donut-chart" style="height: 300px;"></div>
-              </div>
-              <!-- /.card-body-->
-            </div>
-            <!-- /.card -->
-            </div>
-            <!-- /.col -->  
-          </div>
-        </div>
-        <div class="row">
-        <div class="col-md-6 connectedSortable">
-            <!-- Calender -->
-            <div class="card bg-gradient-success">
-              <div class="card-header border-0">
-
-                <h3 class="card-title">
-                  <i class="far fa-calendar-alt"></i>
-                  Calendar
-                </h3>
-                <!-- tools card -->
-                <div class="card-tools">
-                  <!-- button with a dropdown -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                      <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="dropdown-menu" role="menu">
-                      <a href="#" class="dropdown-item">Add new event</a>
-                      <a href="#" class="dropdown-item">Clear events</a>
-                      <div class="dropdown-divider"></div>
-                      <a href="#" class="dropdown-item">View calendar</a>
-                    </div>
-                  </div>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <!-- /. tools -->
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body pt-0">
-                <!--The calendar -->
-                <div id="calendar" style="width: 100%"></div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-          </div>
         </div>
     </section>
+    
     <!-- /.content -->
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
